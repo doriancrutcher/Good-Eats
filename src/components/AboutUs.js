@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutUs.css';
-import familyImage from '../assets/family.jpg'; // Adjust the path as necessary
+// Updated image link
+const familyImage = 'https://i.imgur.com/EbbLS6P.jpeg';
 
 const AboutUs = () => {
     return (

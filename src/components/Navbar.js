@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/GoodEatsLogo.svg'; // Adjust the path as necessary
-import instagramLogo from '../assets/instagram.png'; // Adjust the path to your Instagram logo
+// Updated Instagram logo link
+const instagramLogo = 'https://i.imgur.com/TA91Hse.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);

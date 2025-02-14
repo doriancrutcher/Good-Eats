@@ -1,6 +1,7 @@
 import React from 'react';
 import './Locations.css';
-import googleMapImage from '../assets/map-photo.png'; // Adjusted the path to the correct image name
+// Updated map image link
+const googleMapImage = 'https://i.imgur.com/sGPoHBU.png';
 
 const Locations = () => {
     return (
