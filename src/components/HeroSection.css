@@ -54,4 +54,17 @@
     margin-top: 10px; /* Space between button and tagline */
     margin-bottom: 50px; /* Space between button and tagline */
     text-align: center; /* Center the text */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .tagline {
+        font-size: 36px; /* Smaller font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .tagline {
+        font-size: 28px; /* Even smaller font size for mobile */
+    }
 } 

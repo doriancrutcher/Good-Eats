@@ -44,7 +44,7 @@
 }
 
 /* Media Queries for Mobile Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 979px) {
     .hamburger {
         display: block; /* Show hamburger button on smaller screens */
     }
