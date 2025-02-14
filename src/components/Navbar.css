@@ -18,7 +18,7 @@
     color: white;
     display: none; /* Hide by default */
     z-index: 1001; /* Ensure hamburger stays above dropdown */
-    margin-left: -10px; /* Move hamburger button slightly to the left */
+    margin-right: 10px; /* Move hamburger button slightly to the left */
 }
 
 .nav-links {
