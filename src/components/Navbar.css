@@ -1,0 +1,82 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-opaque background */
+    padding: 15px 50px; /* Increased right padding */
+    position: relative;
+}
+
+.logo img {
+    height: 60px; /* Default logo size */
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 32px; /* Hamburger icon size */
+    color: white;
+    display: none; /* Hide by default */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 20px; /* Space between links */
+    padding-right: 10px;
+    align-items: center; /* Center links vertically */
+    margin-top: auto;
+}
+
+.nav-links li {
+    margin: 0; /* Remove margin */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Font size for links */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+}
+
+.nav-links a:hover {
+    color: #28A745; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger button on smaller screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 70px; /* Adjust based on navbar height */
+        right: 30px; /* Adjusted for larger navbar */
+        background-color: rgba(0, 0, 0, 0.9); /* Darker background for dropdown */
+        padding: 15px; /* Increased padding */
+        width: 200px; /* Set a width for the dropdown */
+    }
+
+    .nav-links.open {
+        display: flex; /* Show links when open */
+    }
+
+    .logo img {
+        height: 50px; /* Reduced logo size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px; /* Further reduced logo size for very small screens */
+    }
+}
+
+.instagram-logo {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    margin-left: 10px; /* Space between the last link and the logo */
+} 
