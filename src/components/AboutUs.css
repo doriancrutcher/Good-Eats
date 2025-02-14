@@ -3,7 +3,7 @@
     background-color: #333; /* Dark background color */
     color: #ffffff; /* Bright text color */
     text-align: justify; /* Justify the text */
-    height: 98vh; /* Allow height to adjust based on content */
+    height: 100%; /* Allow height to adjust based on content */
     position: relative;
 }
 
