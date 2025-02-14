@@ -1,0 +1,27 @@
+.locations {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center the text */
+    height: 98vh; /* Allow height to adjust based on content */
+}
+
+.locations h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.locations p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.location {
+    margin-bottom: 40px; /* Space between locations */
+}
+
+.map-image {
+    width: 40%; /* Make the map image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space between address and image */
+} 

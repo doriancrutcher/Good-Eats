@@ -25,7 +25,11 @@ const Navbar = () => {
                 <li><Link to="/about">About Us</Link></li>
                 <li><Link to="/contact">Contact Us</Link></li>
                 <li><Link to="/menu">Menu</Link></li>
-                <li><Link to="/reservation">Make Reservation</Link></li>
+                <li>
+                    <a href="https://www.opentable.com" target="_blank" rel="noopener noreferrer">
+                        Make Reservation
+                    </a>
+                </li>
                 <li><Link to="/locations">Locations</Link></li>
                 <li>
                     <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">

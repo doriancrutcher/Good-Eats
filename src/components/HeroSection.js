@@ -12,7 +12,11 @@ const HeroSection = () => {
             <div className="overlay">
             <h1 className="tagline">~ Food that Warms the Heart ~</h1>
 
-                <button className="reservation-button">Make Reservation</button>
+                <button className="reservation-button">
+                    <a href="https://www.opentable.com" target="_blank" rel="noopener noreferrer">
+                        Make Reservation
+                    </a>
+                </button>
             </div>
         </div>
     );
