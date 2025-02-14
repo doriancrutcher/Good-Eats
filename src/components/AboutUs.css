@@ -1,0 +1,68 @@
+.about-us {
+    padding: 30px 10px; /* Reduced padding */
+    background-color: #333; /* Dark background color */
+    color: #ffffff; /* Bright text color */
+    text-align: justify; /* Justify the text */
+    height: 98vh; /* Allow height to adjust based on content */
+    position: relative;
+}
+
+.about-us-image-block {
+    width: 100%; /* Full width for the image block */
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center the image horizontally */
+    margin-bottom: 15px; /* Space between the image and text */
+}
+
+.about-us-image {
+    width: 40%; /* Make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-us-text-block {
+    text-align: center; /* Center the text block */
+}
+
+.about-us h1 {
+    font-family: 'Italiana', serif; /* Italiana font */
+    font-size: 36px; /* Reduced font size for the header */
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    font-family: 'Italiana', serif; /* Italiana font */
+    font-size: 20px; /* Font size for the paragraph */
+    line-height: 1.4; /* Adjust line height for readability */
+    margin: auto 6vw 10px 8vw; /* Center with margins */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .about-us-image {
+        width: 80%; /* Increase image size for smaller screens */
+    }
+
+    .about-us h1 {
+        font-size: 28px; /* Smaller header font size */
+    }
+
+    .about-us p {
+        font-size: 18px; /* Smaller paragraph font size */
+        margin: auto 4vw 10px 4vw; /* Adjust margins */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-image {
+        width: 90%; /* Further increase image size for very small screens */
+    }
+
+    .about-us h1 {
+        font-size: 24px; /* Even smaller header font size */
+    }
+
+    .about-us p {
+        font-size: 16px; /* Even smaller paragraph font size */
+        margin: auto 2vw 10px 2vw; /* Adjust margins */
+    }
+} 
