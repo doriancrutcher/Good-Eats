@@ -1,0 +1,31 @@
+.menu {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center the text */
+    height: 98vh;
+}
+
+.menu h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    margin-bottom: 30px; /* Space between menu items */
+}
+
+.menu-item h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.menu-item span {
+    font-size: 18px;
+    font-weight: bold;
+} 
