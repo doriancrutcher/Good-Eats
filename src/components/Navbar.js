@@ -12,10 +12,15 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
+    // Close menu when a link is clicked
+    const handleLinkClick = () => {
+        setIsOpen(false);
+    };
+
     return (
         <nav className="navbar">
             <div className="logo">
-                <Link to="/">
+                <Link to="/" onClick={handleLinkClick}>
                     <img src={logo} alt="GoodEats Logo" />
                 </Link>
             </div>
@@ -23,17 +28,27 @@ const Navbar = () => {
                 &#9776; {/* Hamburger icon */}
             </div>
             <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-                <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/contact">Contact Us</Link></li>
-                <li><Link to="/menu">Menu</Link></li>
+                <li><Link to="/about" onClick={handleLinkClick}>About Us</Link></li>
+                <li><Link to="/contact" onClick={handleLinkClick}>Contact Us</Link></li>
+                <li><Link to="/menu" onClick={handleLinkClick}>Menu</Link></li>
                 <li>
-                    <a href="https://www.opentable.com" target="_blank" rel="noopener noreferrer">
+                    <a 
+                        href="https://www.opentable.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        onClick={handleLinkClick}
+                    >
                         Make Reservation
                     </a>
                 </li>
-                <li><Link to="/locations">Locations</Link></li>
+                <li><Link to="/locations" onClick={handleLinkClick}>Locations</Link></li>
                 <li>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <a 
+                        href="https://www.instagram.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        onClick={handleLinkClick}
+                    >
                         <img src={instagramLogo} alt="Instagram" className="instagram-logo" />
                     </a>
                 </li>

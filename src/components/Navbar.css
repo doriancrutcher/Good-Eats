@@ -5,6 +5,7 @@
     background-color: rgba(0, 0, 0, 0.7); /* Dark semi-opaque background */
     padding: 15px 50px; /* Increased right padding */
     position: relative;
+    z-index: 1000; /* Ensure navbar stays above other content */
 }
 
 .logo img {
@@ -16,6 +17,8 @@
     font-size: 32px; /* Hamburger icon size */
     color: white;
     display: none; /* Hide by default */
+    z-index: 1001; /* Ensure hamburger stays above dropdown */
+    margin-left: -10px; /* Move hamburger button slightly to the left */
 }
 
 .nav-links {
@@ -50,18 +53,31 @@
     }
 
     .nav-links {
-        display: none; /* Hide links by default */
-        flex-direction: column; /* Stack links vertically */
+        display: none; /* Hide by default on mobile */
         position: absolute;
-        top: 70px; /* Adjust based on navbar height */
-        right: 30px; /* Adjusted for larger navbar */
-        background-color: rgba(0, 0, 0, 0.9); /* Darker background for dropdown */
-        padding: 15px; /* Increased padding */
-        width: 200px; /* Set a width for the dropdown */
+        top: 100%; /* Position right below navbar */
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 250px;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 999;
     }
 
     .nav-links.open {
-        display: flex; /* Show links when open */
+        display: flex; /* Show when open */
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
     }
 
     .logo img {
@@ -72,6 +88,10 @@
 @media (max-width: 480px) {
     .logo img {
         height: 40px; /* Further reduced logo size for very small screens */
+    }
+
+    .navbar {
+        padding: 15px 20px; /* Reduce padding on very small screens */
     }
 }
 
